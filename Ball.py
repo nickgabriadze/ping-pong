@@ -46,7 +46,7 @@ class Ball:
 
             if self.ball.x > surfaceW // 2:
                 self.__ballSpeedX *= -1
-                self.__moveDirection = False
+                self.__moveDirection = False  # in this case False is indicating negative direction
 
                 self.ballKeepMoving()
 

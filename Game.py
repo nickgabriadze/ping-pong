@@ -38,12 +38,8 @@ class PingPong:
         self.rightPaddle.displayPaddle(self.__display)
         self.leftPaddle.moveLeftPaddle()
         self.rightPaddle.moveRightPaddle()
-
         self.ball.drawBall(self.__display)
-
-        # self.ball.dropBall()
         self.ball.ballKeepMoving()
-
         self.gameOver = self.ball.checkBorders(self.__WIDTH, self.__HEIGHT)
         self.ball.checkForPaddleCollision(self.leftPaddle, self.rightPaddle,
                                           self.__WIDTH)
